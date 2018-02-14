@@ -1,0 +1,10 @@
+<form class="login-form">
+  <mat-form-field class="example-container">
+    <input matInput [(ngModel)]='nome' placeholder="Nome do Usuário" name="loginNome">
+  </mat-form-field>
+  <mat-form-field class="example-full-widht">
+    <input matInput [(ngModel)]='senha' placeholder="Senha do Usuário" name="loginSenha">
+  </mat-form-field>
+  <button mat-button (click)="login()">Login</button>
+  <span *ngIf="formError">Verifique os dados informados!!</span>
+</form>
